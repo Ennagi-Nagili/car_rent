@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Inconsolata:wght@400;600;700&family=Lato&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="" class="logo" style="text-decoration: none;">MORENT</a>
+            <img src="srch.svg" alt="" class="srch">
+            <input type="text" class="search" placeholder="Search something here">
+            <img src="filter.svg" alt="" class="filter" id="filter">
+        </div>
+
+        <div class="nav-right">
+            <a href="">
+                <img src="like.svg" alt="">
+            </a>
+            <a href="">
+                <img src="notification.svg" alt="">
+            </a>
+            <a href="">
+                <img src="settings.svg" alt="">
+            </a>
+            <a href="">
+                <img src="profil.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="center">
+        <div class="side" id="side">
+            <p class="type" id="type">TYPE</p>
+            <div>
+                <input type="checkbox" class="check" style="margin-top: 0;">
+                <label for="" class="label">Sport <span class="type" style="font-size: 20px;">&nbsp(10)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">SUV <span class="type" style="font-size: 20px;">&nbsp(12)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">MPV <span class="type" style="font-size: 20px;">&nbsp(16)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">Sedan <span class="type" style="font-size: 20px;">&nbsp(20)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">Coupe <span class="type" style="font-size: 20px;">&nbsp(14)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">Hatchback <span class="type" style="font-size: 20px;">&nbsp(15)</span></label>
+            </div>
+
+            <p class="type" style="margin-top: 56px;" id="capacity">CAPACITY</p>
+            <div>
+                <input type="checkbox" class="check" style="margin-top: 0;">
+                <label for="" class="label">2 Person <span class="type" style="font-size: 20px;">&nbsp(10)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">4 person <span class="type" style="font-size: 20px;">&nbsp(14)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">6 Person <span class="type" style="font-size: 20px;">&nbsp(12)</span></label>
+
+                <br>
+
+                <input type="checkbox" class="check">
+                <label for="" class="label">8 or More <span class="type" style="font-size: 20px;">&nbsp(16)</span></label>
+            </div>
+
+            <p class="type" style="margin-top: 56px;">PRICE</p>
+            <input type="range" id="slider" value="0">
+        </div>
+
+        <div class="main">
+            <div class="pop">
+                <p class="popular">Recent Car</p>
+                <a href="" style="text-decoration: none;">
+                    <p class="popular" style="color: #3563E9;">View All</p>
+                </a>
+            </div>
+    
+            <div class="items">
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">Koenigsegg</p>
+                            <img src="like_fill.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">Sport</p>
+        
+                        <div class="car">
+                            <img src="car1.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">90L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">2 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$99.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <div class="item">
+                    <div class="item-head">
+                        <p class="item-name">Nissan GT - R</p>
+                        <img src="like_empty.svg" alt="" class="heart">
+                    </div>
+    
+                    <p class="item-type" style="margin-top: 4px;">Sport</p>
+    
+                    <div class="car">
+                        <img src="car2.png" alt="">
+                    </div>
+                    <div class="item-details">
+                        <div style="display: flex;">
+                            <img src="gas.svg" alt="">
+                            <p class="item-type">80L</p>
+                        </div>
+    
+                        <div style="display: flex;">
+                            <img src="circle.svg" alt="">
+                            <p class="item-type">Manual</p>
+                        </div>
+    
+                        <div style="display: flex;">
+                            <img src="people.svg" alt="">
+                            <p class="item-type">2 People</p>
+                        </div>
+                    </div>
+    
+                    <div class="item-foot">
+                        <div>
+                            <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                            <p class="discount">$100.00</p>
+                        </div>
+                        <button class="top-btn" style="width: 116px;">Rent Now</button>
+                    </div>
+                </div>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">Rolls - Royce</p>
+                            <img src="like_fill.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">Sedan</p>
+        
+                        <div class="car">
+                            <img src="car3.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">70L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">4 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$96.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">Nissan GT - R</p>
+                            <img src="like_empty.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">Sport</p>
+        
+                        <div class="car">
+                            <img src="car2.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">80L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">2 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                                <p class="discount">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">All New Rush</p>
+                            <img src="like_empty.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">SUV</p>
+        
+                        <div class="car">
+                            <img src="car4.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">70L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">6 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$72.00/ <span class="item-type">day</span></p>
+                                <p class="discount">$80.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">CR  - V</p>
+                            <img src="like_fill.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">SUV</p>
+        
+                        <div class="car">
+                            <img src="car5.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">80L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">6 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">All New Terios</p>
+                            <img src="like_empty.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">SUV</p>
+        
+                        <div class="car">
+                            <img src="car6.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">90L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">6 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$74.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">CR  - V</p>
+                            <img src="like_fill.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">SUV</p>
+        
+                        <div class="car">
+                            <img src="car7.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">80L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">6 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">MG ZX Exclusice</p>
+                            <img src="like_fill.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">Hatchback</p>
+        
+                        <div class="car">
+                            <img src="car8.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">70L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">4 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$76.00/ <span class="item-type">day</span></p>
+                                <p class="discount">$80.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">New MG ZS</p>
+                            <img src="like_empty.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">SUV</p>
+        
+                        <div class="car">
+                            <img src="car9.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">80L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">6 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">MG ZX Excite</p>
+                            <img src="like_fill.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">Hatchback</p>
+        
+                        <div class="car">
+                            <img src="car8.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">90L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">4 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$74.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="item-head">
+                            <p class="item-name">New MG ZS</p>
+                            <img src="like_empty.svg" alt="" class="heart">
+                        </div>
+        
+                        <p class="item-type" style="margin-top: 4px;">SUV</p>
+        
+                        <div class="car">
+                            <img src="car9.png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div style="display: flex;">
+                                <img src="gas.svg" alt="">
+                                <p class="item-type">80L</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="circle.svg" alt="">
+                                <p class="item-type">Manual</p>
+                            </div>
+        
+                            <div style="display: flex;">
+                                <img src="people.svg" alt="">
+                                <p class="item-type">6 People</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-foot">
+                            <div>
+                                <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                                <p class="discount" style="display: none;">$100.00</p>
+                            </div>
+                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="main-foot">
+                <p class="count" style="visibility: hidden;">120 car</p>
+                <button class="top-btn" style="width: 156px;">Show more car</button>
+                <p class="count">120 car</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="foot-top">
+            <div>
+                <a href="" style="text-decoration: none;">
+                    <p class="logo">MORENT</p>
+                </a>
+                <p class="vision">Our vision is to provide convenience <br> and help increase your sales business.</p>
+            </div>
+
+            <div class="foot-top-right">
+                <div style="width: 152px;">
+                    <p class="item-name">About</p>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">How it works</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Featured</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Partnership</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Bussiness Relation</p>
+                    </a>
+                </div>
+    
+                <div style="width: 152px;">
+                    <p class="item-name">Community</p>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Events</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Blog</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Podcast</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Invite a friend</p>
+                    </a>
+                </div>
+    
+                <div style="width: 152px;">
+                    <p class="item-name">Socials</p>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Discord</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Instagram</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Twitter</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Facebook</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid rgba(19, 19, 19, 0.16); margin: 0;">
+
+        <div class="foot-bottom">
+            <p class="item-name" style="font-size: 16px;">©2022 MORENT. All rights reserved</p>
+
+            <div class="foot-top-right">
+                <a href="" style="text-decoration: none;">
+                    <p class="item-name" style="font-size: 16px;">Privacy & Policy</p>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <p class="item-name" style="font-size: 16px;">Terms & Condition</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

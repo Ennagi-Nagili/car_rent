@@ -1,0 +1,345 @@
+$blue: #064fbd;
+
+body {
+    margin: 0;
+    background-color: #F6F7F9;
+    padding: 0;
+}
+
+nav {
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 32px;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    color:#3563E9;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%; /* 48px */
+    letter-spacing: -0.96px;
+    margin: 0;
+}
+
+.search {
+    width: 492px;
+    height: 44px;
+    border-radius: 70px;
+    border: 1px solid rgba(195, 212, 233, 0.40);
+    background-color: white;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-left: 64px;
+    color: #596780;
+    text-align: justify;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+}
+
+.srch {
+    position: relative;
+    left: 112px;
+}
+
+.filter {
+    position: relative;
+    right: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+}
+
+.side {
+    width: 296px;
+    display: none;
+    padding: 32px 32px 0px 32px;
+    background-color: #FFF;
+}
+
+.type {
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+    margin-bottom: 28px;
+}
+
+.check {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.label {
+    color: #596780;
+    text-align: justify;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+}
+
+#slider {
+    width: 100%;
+    height: 12px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: 12px;
+    margin: 0;
+    background-color: #90A3BF;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-image: url(mark.svg);
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.main {
+    padding: 32px 63px 64px 63px;
+}
+
+.top {
+    /* display: flex; */
+    display: none;
+}
+
+.top-in {
+    width: 100%;
+    padding: 24px 0 112px 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline;
+}
+
+.top-txt {
+    width: 272px;
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.96px;
+    margin: 0;
+}
+
+.top-text {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+}
+
+.top-btn {
+    border-radius: 4px;
+    background: #3563E9;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.times {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 32px;
+}
+
+.time {
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 48px 24px 48px;
+}
+
+.time-bot {
+    display: flex; 
+    gap: 24px;
+}
+
+.pick {
+    color: #1A202C;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+}
+
+.drop {
+    width: 126px;
+    border: none;
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+    cursor: pointer;
+}
+
+.pop {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 20px 0 20px;
+}
+
+.popular {
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 32px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 30px;
+}
+
+.item-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name {
+    color: #1A202C;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.6px;
+    margin: 0;
+}
+
+.item-type {
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+    margin: 0;
+}
+
+.car {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 64px;
+}
+
+.item-foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.discount {
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: line-through;
+    margin-top: 4px;
+}
+
+.main-foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    align-items: center;
+}
+
+.count {
+    color:#90A3BF;
+    text-align: right;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+    margin: 0;
+}
+
+.foot {
+    background-color: white;
+    padding: 80px 60px 60px 60px;
+}
+
+.foot-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+}
+
+.foot-top-right {
+    display: flex;
+    gap: 60px;
+}
+
+.vision {
+    color: rgba(19, 19, 19, 0.60);
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+}
+
+.foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+}

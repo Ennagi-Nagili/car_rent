@@ -15,9 +15,7 @@
             <a href="" class="logo" style="text-decoration: none;">MORENT</a>
             <img src="srch.svg" alt="" class="srch">
             <input type="text" class="search" placeholder="Search something here">
-            <a href="" class="filter">
-                <img src="filter.svg" alt="">
-            </a>
+            <img src="filter.svg" alt="" class="filter" id="filter">
         </div>
 
         <div class="nav-right">
@@ -37,8 +35,8 @@
     </nav>
 
     <div class="center">
-        <div class="side">
-            <p class="type">TYPE</p>
+        <div class="side" id="side">
+            <p class="type" id="type">TYPE</p>
             <div>
                 <input type="checkbox" class="check" style="margin-top: 0;">
                 <label for="" class="label">Sport <span class="type" style="font-size: 20px;">&nbsp(10)</span></label>
@@ -69,7 +67,7 @@
                 <label for="" class="label">Hatchback <span class="type" style="font-size: 20px;">&nbsp(15)</span></label>
             </div>
 
-            <p class="type" style="margin-top: 56px;">CAPACITY</p>
+            <p class="type" style="margin-top: 56px;" id="capacity">CAPACITY</p>
             <div>
                 <input type="checkbox" class="check" style="margin-top: 0;">
                 <label for="" class="label">2 Person <span class="type" style="font-size: 20px;">&nbsp(10)</span></label>
@@ -95,7 +93,7 @@
         </div>
 
         <div class="main">
-            <div class="top">
+            <div class="top" id="top">
                 <div class="top-in" style="background-image: url(top1.png);">
                     <p class="top-txt">The Best Platform <br> for Car Rental</p>
                     <p class="top-text">Ease of doing a car rental safely and <br> reliably. Of course at a low price.</p>
@@ -199,7 +197,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">Koenigsegg</p>
-                            <img src="like_fill.svg" alt="">
+                            <img src="like_fill.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">Sport</p>
@@ -234,50 +232,48 @@
                     </div>
                 </a>
     
-                <a href="" style="text-decoration: none;">
-                    <div class="item">
-                        <div class="item-head">
-                            <p class="item-name">Nissan GT - R</p>
-                            <img src="like_empty.svg" alt="">
+                <div class="item">
+                    <div class="item-head">
+                        <p class="item-name">Nissan GT - R</p>
+                        <img src="like_empty.svg" alt="" class="heart">
+                    </div>
+    
+                    <p class="item-type" style="margin-top: 4px;">Sport</p>
+    
+                    <div class="car">
+                        <img src="car2.png" alt="">
+                    </div>
+                    <div class="item-details">
+                        <div style="display: flex;">
+                            <img src="gas.svg" alt="">
+                            <p class="item-type">80L</p>
                         </div>
-        
-                        <p class="item-type" style="margin-top: 4px;">Sport</p>
-        
-                        <div class="car">
-                            <img src="car2.png" alt="">
+    
+                        <div style="display: flex;">
+                            <img src="circle.svg" alt="">
+                            <p class="item-type">Manual</p>
                         </div>
-                        <div class="item-details">
-                            <div style="display: flex;">
-                                <img src="gas.svg" alt="">
-                                <p class="item-type">80L</p>
-                            </div>
-        
-                            <div style="display: flex;">
-                                <img src="circle.svg" alt="">
-                                <p class="item-type">Manual</p>
-                            </div>
-        
-                            <div style="display: flex;">
-                                <img src="people.svg" alt="">
-                                <p class="item-type">2 People</p>
-                            </div>
-                        </div>
-        
-                        <div class="item-foot">
-                            <div>
-                                <p class="item-name">$80.00/ <span class="item-type">day</span></p>
-                                <p class="discount">$100.00</p>
-                            </div>
-                            <button class="top-btn" style="width: 116px;">Rent Now</button>
+    
+                        <div style="display: flex;">
+                            <img src="people.svg" alt="">
+                            <p class="item-type">2 People</p>
                         </div>
                     </div>
-                </a>
+    
+                    <div class="item-foot">
+                        <div>
+                            <p class="item-name">$80.00/ <span class="item-type">day</span></p>
+                            <p class="discount">$100.00</p>
+                        </div>
+                        <button class="top-btn" style="width: 116px;">Rent Now</button>
+                    </div>
+                </div>
     
                 <a href="" style="text-decoration: none;">
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">Rolls - Royce</p>
-                            <img src="like_fill.svg" alt="">
+                            <img src="like_fill.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">Sedan</p>
@@ -316,7 +312,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">Nissan GT - R</p>
-                            <img src="like_empty.svg" alt="">
+                            <img src="like_empty.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">Sport</p>
@@ -362,7 +358,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">All New Rush</p>
-                            <img src="like_empty.svg" alt="">
+                            <img src="like_empty.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">SUV</p>
@@ -401,7 +397,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">CR  - V</p>
-                            <img src="like_fill.svg" alt="">
+                            <img src="like_fill.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">SUV</p>
@@ -440,7 +436,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">All New Terios</p>
-                            <img src="like_empty.svg" alt="">
+                            <img src="like_empty.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">SUV</p>
@@ -479,7 +475,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">CR  - V</p>
-                            <img src="like_fill.svg" alt="">
+                            <img src="like_fill.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">SUV</p>
@@ -518,7 +514,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">MG ZX Exclusice</p>
-                            <img src="like_fill.svg" alt="">
+                            <img src="like_fill.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">Hatchback</p>
@@ -557,7 +553,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">New MG ZS</p>
-                            <img src="like_empty.svg" alt="">
+                            <img src="like_empty.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">SUV</p>
@@ -596,7 +592,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">MG ZX Excite</p>
-                            <img src="like_fill.svg" alt="">
+                            <img src="like_fill.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">Hatchback</p>
@@ -635,7 +631,7 @@
                     <div class="item">
                         <div class="item-head">
                             <p class="item-name">New MG ZS</p>
-                            <img src="like_empty.svg" alt="">
+                            <img src="like_empty.svg" alt="" class="heart">
                         </div>
         
                         <p class="item-type" style="margin-top: 4px;">SUV</p>
