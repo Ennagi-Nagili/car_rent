@@ -127,6 +127,215 @@ nav {
   padding: 32px 63px 64px 63px;
 }
 
+.details {
+  display: flex;
+  gap: 32px;
+}
+
+.image {
+  background-image: url(back.png);
+  padding: 24px 56px 24px 24px;
+  border-radius: 10px;
+}
+
+.frame {
+  border: 3px solid #3563E9; 
+  padding: 8px; 
+  border-radius: 10px;
+}
+
+.mini {
+  background-image: url(back_min1.png); 
+  padding: 36px 8px; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border-radius: 10px;
+}
+
+.dt-side {
+  border-radius: 10px;
+  background-color: white;
+  padding: 24px 24px 32px 24px;
+}
+
+.car-name {
+  color: #1A202C;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+  margin: 0;
+}
+
+.rew {
+  color: #596780;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.dt-t {
+  width: 92px;
+  color: #90A3BF;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  margin: 0;
+}
+
+.dt-s {
+  width: 92px;
+  color: #596780;
+  text-align: right;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  margin: 0 0 0 16px;
+}
+
+.reviews {
+  padding: 24px 24px 34px 24px;
+  background-color: white;
+  margin-top: 32px;
+  border-radius: 10px;
+}
+
+.rw-count {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #3563E9;
+  padding: 6px 16px;
+  border-radius: 4px;
+  margin: 0 0 0 12px;
+}
+
+.cent {
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+}
+
+.holder {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.inp {
+  width: 386px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background: #F6F7F9;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  padding: 0 32px;
+  margin-top: 16px;
+}
+
+.inp::placeholder {
+  color: #90A3BF;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+
+.slc {
+  width: 450px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background: #F6F7F9;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  padding: 0 32px;
+  margin-top: 16px;
+}
+
+.inp-w {
+  width: 362px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background: #FFF;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  padding: 0 32px;
+  margin-top: 16px;
+}
+
+.inp-w::placeholder {
+  color: #90A3BF;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+
+.c-holder {
+  background: #F6F7F9;
+  padding: 16px 32px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-rent {
+  width: 140px;
+  height: 56px;
+  border-radius: 4px;
+  background: #3563E9;
+  color: #FFF;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 32px;
+  cursor: pointer;
+  display: block;
+}
+
+.sum {
+  display: flex; 
+  align-items: center; 
+  gap: 16px; 
+  margin-top: 32px;
+}
+
+.summary {
+  display: flex; 
+  align-items: center; 
+  margin-top: 32px; 
+  justify-content: space-between;
+}
+
 .top {
   display: flex;
 }
@@ -199,6 +408,7 @@ nav {
   font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.32px;
+  margin: 0;
 }
 
 .drop {
@@ -340,4 +550,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding-top: 36px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+hr {
+  border-top: 1px solid rgba(19, 19, 19, 0.16); 
+  margin: 0;
+}

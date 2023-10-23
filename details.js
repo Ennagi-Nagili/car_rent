@@ -20,8 +20,6 @@ filter.onclick = function() {
         type.style.display = "none";
         capacity.style.display = "none"
         items[0].style.gridTemplateColumns = "auto auto auto"
-        items[1].style.gridTemplateColumns = "auto auto auto"
-        topa.style.display = "none"
         open = true
     }
 
@@ -30,8 +28,6 @@ filter.onclick = function() {
         type.style.display = "block";
         capacity.style.display = "block"
         items[0].style.gridTemplateColumns = "auto auto auto auto"
-        items[1].style.gridTemplateColumns = "auto auto auto auto"
-        topa.style.display = "flex"
         open = false
     }
 }

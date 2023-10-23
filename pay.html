@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Inconsolata:wght@400;600;700&family=Lato&family=Plus+Jakarta+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="" class="logo" style="text-decoration: none;">MORENT</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="">
+                <img src="like.svg" alt="">
+            </a>
+            <a href="">
+                <img src="notification.svg" alt="">
+            </a>
+            <a href="">
+                <img src="settings.svg" alt="">
+            </a>
+            <a href="">
+                <img src="profil.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="cent">
+        <div>
+            <div class="holder">
+                <p class="item-name">Billing Info</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+                    <p class="item-type">Please enter your billing info</p>
+                    <p class="item-type">Step 1 of 4</p>
+                </div>
+    
+                <div style="margin-top: 32px;">
+                    <div style="display: flex; gap: 32px;">
+                        <div>
+                            <p class="pick">Name</p>
+                            <input type="text" class="inp" placeholder="Your name">
+                        </div>
+
+                        <div>
+                            <p class="pick">Address</p>
+                            <input type="text" class="inp" placeholder="Address">
+                        </div>
+                    </div>
+    
+                    <div style="display: flex; gap: 32px; margin-top: 24px;">
+                        <div>
+                            <p class="pick">Phone number</p>
+                            <input type="text" class="inp" placeholder="Phone number">
+                        </div>
+                        
+                        <div>
+                            <p class="pick">Town / City</p>
+                            <input type="text" class="inp" placeholder="Town / City">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="holder">
+                <p class="item-name">Rental Info</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+                    <p class="item-type">Please select your rental date</p>
+                    <p class="item-type">Step 2 of 4</p>
+                </div>
+
+                <div style="display: flex; margin-top: 32px;">
+                    <img src="radio_dark.svg" alt="">
+                    <p class="pick" style="padding-left: 8px;">Pick - Up</p>
+                </div>
+    
+                <div style="margin-top: 24px;">
+                    <div style="display: flex; gap: 32px;">
+                        <div>
+                            <p class="pick">Locations</p>
+
+                            <select name="" id="" class="slc">
+                                <option value="" disabled selected>Select your city</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p class="pick">Date</p>
+
+                            <select name="" id="" class="slc">
+                                <option value="" disabled selected>Select your date</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 32px; margin-top: 24px;">
+                        <div>
+                            <p class="pick">Time</p>
+
+                            <select name="" id="" class="slc">
+                                <option value="" disabled selected>Select your time</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 32px;">
+                    <img src="radio_light.svg" alt="">
+                    <p class="pick" style="padding-left: 8px;">Drop - Off</p>
+                </div>
+    
+                <div style="margin-top: 24px;">
+                    <div style="display: flex; gap: 32px;">
+                        <div>
+                            <p class="pick">Locations</p>
+
+                            <select name="" id="" class="slc">
+                                <option value="" disabled selected>Select your city</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p class="pick">Date</p>
+
+                            <select name="" id="" class="slc">
+                                <option value="" disabled selected>Select your date</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 32px; margin-top: 24px;">
+                        <div>
+                            <p class="pick">Time</p>
+
+                            <select name="" id="" class="slc">
+                                <option value="" disabled selected>Select your time</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                <p class="item-name">Payment Method</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+                    <p class="item-type">Please enter your payment method</p>
+                    <p class="item-type">Step 3 of 4</p>
+                </div>
+
+                <div class="holder" style="background-color: #F6F7F9;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="display: flex;">
+                            <img src="radio_dark.svg" alt="">
+                            <p class="pick" style="padding-left: 8px;">Credit Card</p>
+                        </div>
+
+                        <img src="visa.png" alt="" style="height: 20px;">
+                    </div>
+
+                    <div style="margin-top: 32px;">
+                        <div style="display: flex; gap: 32px;">
+                            <div>
+                                <p class="pick">Card Number</p>
+                                <input type="text" class="inp-w" placeholder="Card number">
+                            </div>
+    
+                            <div>
+                                <p class="pick">Experation Date</p>
+                                <input type="text" class="inp-w" placeholder="DD / MM / YY">
+                            </div>
+                        </div>
+        
+                        <div style="display: flex; gap: 32px; margin-top: 24px;">
+                            <div>
+                                <p class="pick">Card Holder</p>
+                                <input type="text" class="inp-w" placeholder="Card holder">
+                            </div>
+                            
+                            <div>
+                                <p class="pick">CVC</p>
+                                <input type="text" class="inp-w" placeholder="CVC">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-holder" style="margin-top: 24px;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <input type="radio" style="width: 24px; height: 24px;">
+                        <label for="" class="pick">Paypal</label>
+                    </div>
+
+                    <img src="payPal.png" alt="">
+                </div>
+
+                <div class="c-holder" style="margin-top: 24px;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <input type="radio" style="width: 24px; height: 24px;">
+                        <label for="" class="pick">Bitcoin</label>
+                    </div>
+
+                    <img src="bitcoin.png" alt="">
+                </div>
+            </div>
+
+            <div class="holder">
+                <p class="item-name">Confirmation</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+                    <p class="item-type">We are getting to the end. Just few clicks and your rental is ready!</p>
+                    <p class="item-type">Step 4 of 4</p>
+                </div>
+
+                <div class="c-holder" style="margin-top: 24px;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <input type="checkbox" style="width: 24px; height: 24px;">
+                        <label for="" class="pick">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+                    </div>
+                </div>
+
+                <div class="c-holder" style="margin-top: 24px;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <input type="checkbox" style="width: 24px; height: 24px;">
+                        <label for="" class="pick">I agree with our terms and conditions and privacy policy.</label>
+                    </div>
+                </div>
+
+                <button class="pay-rent">Rent Now</button>
+
+                <img src="shield.png" alt="" style="margin-top: 32px;">
+
+                <p class="item-name" style="font-size: 16px; margin-top: 16px;">All your data are safe</p>
+
+                <p class="item-type">We are using the most advanced security to provide you the best experience ever.</p>
+            </div>
+        </div>
+
+        <div class="holder" style="height: 512px;">
+            <p class="item-name">Rental Summary</p>
+            <p class="item-type" style="margin-top: 4px;">Prices may change depending on the length of the rental and the price of your rental car.</p>
+        
+            <div class="sum">
+                <div class="mini">
+                    <img src="car2_mini.png" alt="">
+                </div>
+
+                <div>
+                    <p class="car-name">Nissan GT - R</p>
+                    <div style="display: flex; margin-top: 10px;">
+                        <img src="stars.svg" alt="">
+                        <p class="rew">440+ Reviewer</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin-top: 32px;">
+
+            <div style="margin-top: 32px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <p class="item-type" style="font-size: 16px;">Subtotal</p>
+                    <p class="item-name" style="font-size: 16px;">$80.00</p>
+                </div>
+    
+                <div style="display: flex; justify-content: space-between; margin-top: 24px;">
+                    <p class="item-type" style="font-size: 16px;">Tax</p>
+                    <p class="item-name" style="font-size: 16px;">$0</p>
+                </div>
+            </div>
+
+            <div class="c-holder" style="margin-top: 32px;">
+                <p class="item-type">Apply promo code</p>
+                <p class="item-name" style="font-size: 16px;">Apply now</p>
+            </div>
+
+            <div class="summary">
+                <div>
+                    <p class="item-name">Total Rental Price</p>
+                    <p class="item-type" style="margin-top: 4px;">Overall price and includes rental discount</p>
+                </div>
+
+                <p class="car-name">$80.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="foot-top">
+            <div>
+                <a href="" style="text-decoration: none;">
+                    <p class="logo">MORENT</p>
+                </a>
+                <p class="vision">Our vision is to provide convenience <br> and help increase your sales business.</p>
+            </div>
+
+            <div class="foot-top-right">
+                <div style="width: 152px;">
+                    <p class="item-name">About</p>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">How it works</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Featured</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Partnership</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Bussiness Relation</p>
+                    </a>
+                </div>
+
+                <div style="width: 152px;">
+                    <p class="item-name">Community</p>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Events</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Blog</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Podcast</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Invite a friend</p>
+                    </a>
+                </div>
+
+                <div style="width: 152px;">
+                    <p class="item-name">Socials</p>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Discord</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Instagram</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Twitter</p>
+                    </a>
+                    <a href="" style="text-decoration: none;">
+                        <p class="vision">Facebook</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid rgba(19, 19, 19, 0.16); margin: 0;">
+
+        <div class="foot-bottom">
+            <p class="item-name" style="font-size: 16px;">©2022 MORENT. All rights reserved</p>
+
+            <div class="foot-top-right">
+                <a href="" style="text-decoration: none;">
+                    <p class="item-name" style="font-size: 16px;">Privacy & Policy</p>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <p class="item-name" style="font-size: 16px;">Terms & Condition</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+
+</html>
