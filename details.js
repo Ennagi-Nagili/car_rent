@@ -13,6 +13,7 @@ let capacity = document.getElementById("capacity")
 let topa = document.getElementById("top")
 let items = document.getElementsByClassName("items")
 let open = false
+let like = false
 
 filter.onclick = function() {
     if(!open) {
@@ -48,6 +49,20 @@ for(let i = 0; i < heart.length; i++) {
         else {
             heart[i].src = "like_empty.svg"
             likes[i] = false
+        }
+    }
+}
+
+let item = document.getElementsByClassName("item")
+
+for(let i = 0; i < item.length; i++) {
+    item[i].onclick = function() {
+        if (!like) {
+            window.location.href = "details.html"
+        }
+    
+        else {
+            like = false
         }
     }
 }
