@@ -66,3 +66,12 @@ for(let i = 0; i < item.length; i++) {
         }
     }
 }
+
+let btn = document.getElementsByClassName("top-btn")
+
+for(let i = 0; i < btn.length; i++) {
+    btn[i].onclick = function() {
+        click = true
+        window.location.href = "pay.html"
+    }
+}
