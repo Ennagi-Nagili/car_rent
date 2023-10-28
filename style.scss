@@ -1,6 +1,5 @@
-$blue: #064fbd;
-
 body {
+    width: 100%;
     margin: 0;
     background-color: #F6F7F9;
     padding: 0;
@@ -8,12 +7,27 @@ body {
 
 nav {
     height: 124px;
-    display: flex;
-    justify-content: space-between;
     padding-left: 60px;
     padding-right: 32px;
     align-items: center;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bottom {
+    display: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-left {
@@ -26,27 +40,32 @@ nav {
 }
 
 .logo {
-    color:#3563E9;
-    font-family: 'Plus Jakarta Sans';
+    color: #3563E9;
+    font-family: "Plus Jakarta Sans";
     font-size: 32px;
     font-weight: 700;
-    line-height: 150%; /* 48px */
+    line-height: 150%;
+    /* 48px */
     letter-spacing: -0.96px;
     margin: 0;
+}
+
+.srch-container {
+    display: flex;
 }
 
 .search {
     width: 492px;
     height: 44px;
     border-radius: 70px;
-    border: 1px solid rgba(195, 212, 233, 0.40);
+    border: 1px solid rgba(195, 212, 233, 0.4);
     background-color: white;
     padding-left: 64px;
     padding-right: 64px;
     margin-left: 64px;
     color: #596780;
     text-align: justify;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
@@ -54,11 +73,13 @@ nav {
 }
 
 .srch {
+    width: 24px;
     position: relative;
     left: 112px;
 }
 
 .filter {
+    width: 24px;
     position: relative;
     right: 48px;
     display: flex;
@@ -79,7 +100,7 @@ nav {
 
 .type {
     color: #90A3BF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.24px;
@@ -93,20 +114,29 @@ nav {
     margin-top: 32px;
 }
 
+.check1 {
+    margin-top: 0;
+}
+
 .label {
     color: #596780;
     text-align: justify;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 20px;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.4px;
 }
 
+.capacity {
+    margin-top: 56px;
+}
+
 #slider {
     width: 100%;
     height: 12px;
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     outline: none;
     border-radius: 12px;
@@ -128,9 +158,223 @@ nav {
     padding: 32px 63px 64px 63px;
 }
 
+.details {
+    display: flex;
+    gap: 32px;
+}
+
+.image {
+    background-image: url(back.png);
+    padding: 24px 56px 24px 24px;
+    border-radius: 10px;
+}
+
+.frame {
+    border: 3px solid #3563E9;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.mini {
+    background-image: url(back_min1.png);
+    padding: 36px 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.dt-side {
+    border-radius: 10px;
+    background-color: white;
+    padding: 24px 24px 32px 24px;
+}
+
+.car-name {
+    color: #1A202C;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.96px;
+    margin: 0;
+}
+
+.rew {
+    color: #596780;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    margin: 0;
+    padding-top: 2px;
+}
+
+.dt-t {
+    width: 92px;
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+.dt-s {
+    width: 92px;
+    color: #596780;
+    text-align: right;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    margin: 0 0 0 16px;
+}
+
+.reviews {
+    padding: 24px 24px 34px 24px;
+    background-color: white;
+    margin-top: 32px;
+    border-radius: 10px;
+}
+
+.rw-count {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #3563E9;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin: 0 0 0 12px;
+}
+
+.cent {
+    display: flex;
+    padding: 32px;
+    gap: 32px;
+}
+
+.cent-side {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.holder {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.inp {
+    width: 386px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background: #F6F7F9;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+    padding: 0 32px;
+    margin-top: 16px;
+}
+
+.inp::placeholder {
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+}
+
+.slc {
+    width: 450px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background: #F6F7F9;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+    padding: 0 32px;
+    margin-top: 16px;
+}
+
+.inp-w {
+    width: 362px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background: #FFF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+    padding: 0 32px;
+    margin-top: 16px;
+}
+
+.inp-w::placeholder {
+    color: #90A3BF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+}
+
+.c-holder {
+    background: #F6F7F9;
+    padding: 16px 32px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-rent {
+    width: 140px;
+    height: 56px;
+    border-radius: 4px;
+    background: #3563E9;
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 32px;
+    cursor: pointer;
+    display: block;
+}
+
+.sum {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.summary {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
 .top {
-    /* display: flex; */
-    display: none;
+    display: flex;
 }
 
 .top-in {
@@ -139,12 +383,18 @@ nav {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline;
+    background-image: url(top1.png);
+}
+
+.top-in-1 {
+    margin-left: 96px;
+    background-image: url(top2.png);
 }
 
 .top-txt {
     width: 272px;
     color: #FFF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 32px;
     font-weight: 600;
     line-height: 150%;
@@ -154,7 +404,7 @@ nav {
 
 .top-text {
     color: #FFF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -166,7 +416,7 @@ nav {
     background: #3563E9;
     color: #FFF;
     text-align: center;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
@@ -177,41 +427,205 @@ nav {
     cursor: pointer;
 }
 
+.top-btn-light {
+    background-color: #54A6FF;
+}
+
+.txt-372 {
+    width: 372px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-10 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.m-16 {
+    margin-top: 16px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.j-container {
+    display: flex;
+    gap: 21.5px;
+    margin-top: 24px;
+}
+
+.bet-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vbn {
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+.g-container {
+    display: flex;
+    gap: 44px;
+    margin-top: 32px;
+}
+
+.m-99 {
+    margin-top: 99px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.btn-s {
+    width: 140px;
+    height: 56px;
+}
+
+.container-32 {
+    display: flex;
+    margin-top: 32px;
+}
+
+.s-56 {
+    width: 56px;
+    height: 56px;
+}
+
+.m-8 {
+    margin-top: 8px;
+}
+
+.m-32 {
+    margin-top: 32px;
+}
+
+.qwe {
+    width: 108px;
+    height: 20px;
+}
+
+.rty {
+    padding: 12px 16px 0 0;
+}
+
+.container-g-32 {
+    display: flex;
+    gap: 32px;
+}
+
+.m-24 {
+    margin-top: 24px;
+}
+
+.p-8 {
+    padding-left: 8px;
+}
+
+.color {
+    background-color: #F6F7F9;
+}
+
+.con-al {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.s-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.h-548 {
+    height: 548px;
+}
+
+.review {
+    display: flex;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.asd {
+    padding-left: 8px;
+}
+
+.fgh {
+    margin: 0 0 0 4px;
+}
+
+.blue-dark {
+    color: #3563E9;
+}
+
+.jkl {
+    margin-top: 4px;
+}
+
+.invisible {
+    display: none;
+}
+
 .times {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
     margin-top: 32px;
 }
 
 .time {
     background-color: white;
     border-radius: 10px;
-    padding: 8px 48px 24px 48px;
+    padding: 24px 48px 24px 48px;
 }
 
 .time-bot {
-    display: flex; 
+    display: flex;
     gap: 24px;
 }
 
 .pick {
     color: #1A202C;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.32px;
+    margin: 0;
 }
 
 .drop {
     width: 126px;
     border: none;
     color: #90A3BF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 12px;
     font-weight: 500;
     letter-spacing: -0.24px;
     cursor: pointer;
+}
+
+.v-divider {
+    height: 48px;
+    border-left: 1px solid rgba(195, 212, 233, 0.40);
 }
 
 .pop {
@@ -222,7 +636,7 @@ nav {
 
 .popular {
     color: #90A3BF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 600;
     margin: 0;
@@ -248,7 +662,7 @@ nav {
 
 .item-name {
     color: #1A202C;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 20px;
     font-weight: 700;
     line-height: 150%;
@@ -258,7 +672,7 @@ nav {
 
 .item-type {
     color: #90A3BF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 700;
     line-height: 150%;
@@ -288,11 +702,32 @@ nav {
 
 .discount {
     color: #90A3BF;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 700;
     text-decoration-line: line-through;
     margin-top: 4px;
+}
+
+.zxc {
+    width: 116px;
+}
+
+.btn-156 {
+    width: 156px;
+}
+
+.foot-container {
+    width: 152px;
+}
+
+hr {
+    border-top: 1px solid rgba(19, 19, 19, 0.16);
+    margin: 0;
+}
+
+.foot-txt {
+    font-size: 16px;
 }
 
 .main-foot {
@@ -303,9 +738,9 @@ nav {
 }
 
 .count {
-    color:#90A3BF;
+    color: #90A3BF;
     text-align: right;
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
@@ -330,8 +765,8 @@ nav {
 }
 
 .vision {
-    color: rgba(19, 19, 19, 0.60);
-    font-family: 'Plus Jakarta Sans';
+    color: rgba(19, 19, 19, 0.6);
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -342,4 +777,266 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-top: 36px;
+}
+
+@media (width <= 1000px) {
+    nav {
+        padding: 0 16px 0 30px;
+        align-items: start;
+    }
+
+    .srch-container {
+        display: none;
+    }
+
+    .search {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 16px;
+        font-size: 13px;
+    }
+
+    .nav-bottom {
+        width: 100%;
+        display: flex;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .btn {
+        width: 28px;
+        margin-top: 4px;
+    }
+
+    .srch {
+        left: 42px;
+        top: 8px;
+    }
+
+    .filter {
+        right: 42px;
+        top: 8px;
+    }
+
+    .main {
+        padding: 32px 16px;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .top-in {
+        width: 300px;
+        padding: 24px 0 24px 24px;
+    }
+
+    .top-txt {
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+
+    .top-text {
+        font-size: 8px;
+        letter-spacing: normal;
+    }
+
+    .top-btn {
+        font-size: 8px;
+    }
+
+    .top-in-1 {
+        margin-left: 0;
+    }
+
+    .times {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .time {
+        padding: 12px 24px;
+    }
+
+    .radio {
+        width: 10px;
+    }
+
+    .time-bot {
+        margin-top: 16px;
+    }
+
+    .pick {
+        font-size: 10px;
+    }
+
+    .drop {
+        width: 63px;
+        background: transparent;
+        font-size: 8px;
+    }
+
+    .v-divider {
+        height: 36px;
+    }
+
+    .switch {
+        width: 45px;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .car {
+        display: flex;
+        justify-content: center;
+    }
+
+    .car-img {
+        width: 216px;
+    }
+
+    .foot {
+        padding: 40px 30px 30px 30px;
+    }
+
+    .foot-top {
+        justify-content: start;
+    }
+
+    .foot-top-right {
+        margin-left: 16px;
+        gap: 15px;
+    }
+
+    .foot-container {
+        width: 76px;
+    }
+
+    .mob-name {
+        font-size: 10px;
+    }
+
+    .vision {
+        font-size: 8px;
+    }
+
+    .foot-txt {
+        font-size: 12px;
+    }
+
+    .image {
+        width: 300px;
+        padding: 24px 0 24px 24px;
+    }
+
+    .dt-car {
+        width: 218px;
+    }
+
+    .j-container {
+        gap: 5.5px;
+    }
+
+    .frame {
+        height: 68px;
+    }
+
+    .mini {
+        width: 66px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        padding: 24px 8px;
+    }
+
+    .other {
+        height: 88px;
+    }
+
+    .m-car {
+        width: 58px;
+        height: 18px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .rew {
+        font-size: 12px;
+    }
+
+    .dt-side {
+        padding: 24px 16px 32px 16px;
+    }
+
+    .dt-t {
+        width: 48px;
+        font-size: 12px;
+    }
+
+    .dt-s {
+        width: 48px;
+        font-size: 12px;
+    }
+
+    .cent {
+        padding: 32px 16px;
+        display: block;
+    }
+    
+    .container-g-32 {
+        flex-direction: column;
+    }
+
+    .inp {
+        width: 75%;
+    }
+
+    .slc {
+        width: 98%;
+    }
+
+    .inp-w {
+        width: 75%;
+    }
+
+    .name-car {
+        font-size: 24px;
+    }
+
+    .total {
+        font-size: 10px;
+    }
+
+    .over {
+        font-size: 7px;
+    }
+
+    .pri {
+        font-size: 16px;
+    }
+
+    .side {
+        padding: 32px 16px 0 19px;
+    }
+
+    .check {
+        width: 8px;
+    }
+
+    .label {
+        font-size: 8px;
+    }
+
+    .type {
+        font-size: 6px;
+    }
 }

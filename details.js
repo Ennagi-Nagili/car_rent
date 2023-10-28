@@ -6,7 +6,7 @@ sliderEl.addEventListener("input", (event) => {
     sliderEl.style.background = `linear-gradient(to right, #3563E9 ${progress}%, #ccc ${progress}%)`;
 })
 
-let filter = document.getElementById("filter")
+let filter = document.getElementsByClassName("filter")
 let side = document.getElementById("side")
 let type = document.getElementById("type")
 let capacity = document.getElementById("capacity")
@@ -15,21 +15,23 @@ let items = document.getElementsByClassName("items")
 let open = false
 let like = false
 
-filter.onclick = function() {
-    if(!open) {
-        side.style.display = "block";
-        type.style.display = "none";
-        capacity.style.display = "none"
-        items[0].style.gridTemplateColumns = "auto auto auto"
-        open = true
-    }
-
-    else {
-        side.style.display = "none";
-        type.style.display = "block";
-        capacity.style.display = "block"
-        items[0].style.gridTemplateColumns = "auto auto auto auto"
-        open = false
+for(let i = 0; i < filter.length; i++) {
+    filter[i].onclick = function() {
+        if(!open) {
+            side.style.display = "block";
+            type.style.display = "none";
+            capacity.style.display = "none"
+            items[0].style.gridTemplateColumns = "auto auto auto"
+            open = true
+        }
+    
+        else {
+            side.style.display = "none";
+            type.style.display = "block";
+            capacity.style.display = "block"
+            items[0].style.gridTemplateColumns = "auto auto auto auto"
+            open = false
+        }
     }
 }
 
